@@ -2,13 +2,21 @@
 title: "ioslides Presentation Template"
 subtitle: "Presentation Subtitle"
 author: "Dan Negrey"
-date: '`r format(Sys.Date(), "%A, %B %d, %Y")`'
 output:
     ioslides_presentation:
         widescreen: TRUE
         transition: slower
         fig_width: 10
-        css: styles.css
+        css: 
+         - css/body-slide.css
+         - css/code-chunk.css
+         - css/code-inline.css
+         - css/plots.css
+         - css/slide-background.css
+         - css/slide-notes.css
+         - css/title-slide.css
+        includes: 
+            before_body: html/title.html
 ---
 
 ## R Markdown
@@ -16,6 +24,12 @@ output:
 This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+<div class="note">
+* note one
+* note two
+* note three
+</div>
 
 ## Slide with Bullets
 

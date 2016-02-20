@@ -1,0 +1,10 @@
+/* font */
+slides > slide h2,
+slides > slide p,
+slides > slide ul,
+slides > slide ol,
+slides > slide li {
+    text-transform: none;
+    font-family: arial, helvetica, sans-serif;
+    color: #FFFFFF;
+}
