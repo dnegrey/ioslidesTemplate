@@ -1,0 +1,12 @@
+/* all slides */
+slide,
+.overview slides >slide,
+.with-notes.popup slide {
+    background: #2B2B2B radial-gradient(circle farthest-corner at center center, #555A5F 0%, #1C1E20 100%)repeat scroll 0% 0%;
+}
+
+/* overview and presenter mode */
+.overview,
+.with-notes.popup slide.backdrop {
+    background: #000000;
+}
